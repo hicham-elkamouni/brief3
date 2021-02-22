@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESERVATION</title>
+    <link rel="stylesheet" href="style-reservation.css">
+
+    <!-- symbols -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- social media icons -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!------------ beginning of the header --------->
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <div class="logo"><strong>RENT<span style="color:#e0ac1c">CAR</strong></span>
+        </div>
+        <ul class="links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="Reservation.html" style="color: #e0ac1c;">RESERVATION</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+    <!------------ end of the header --------->
+
+    <!------------ beginning of the content --------->
+
+
+    <div class="gallery">
+        <h1>RESERVATION</h1>
+    </div>
+
+    <!------------ div for space between elements ------->
+    <div class="div-for-space"></div>
+    <!---------------- end of space between ---------->
+
+    <!--------------- reservation ------------------->
+
+    <h2 class="choose">choose your type</h2>
+
+    <div class="type">
+        <img class="slide" id="moto" src="images/moto1.jpg" alt="motorcycle" onclick="choix(this.id)">
+        <img class="slide" id="compact" src="images/compact1.jpg" alt="compact-car" onclick="choix(this.id)">
+        <img class="slide" id="citadine" src="images/citadine1.jpg" alt="citadine-car" onclick="choix(this.id)">
+        <img class="slide" id="utilitaire" src="images/utilitaire1.jpg" alt="utilitaire-car" onclick="choix(this.id)">
+        <img class="slide" id="berlin" src="images/berline1.jpg" alt="berlin-car" onclick="choix(this.id)">
+        <img class="slide" id="truck" src="images/camion1.jpg" alt="camion" onclick="choix(this.id)">
+        <img class="slide" id="cm" src="images/construction-machine1.jpg" alt="construction-machine" onclick="choix(this.id)">
+    </div>
+
+    <!------------------------fuel------------------------>
+
+    <h2 class="choose">Select your fuel type</h2>
+    <form class="feul">
+        <div class="carburant">
+            <input type="radio" id="essence" name="radio" value="0.14" onclick="fuelP(this.value)">
+            <label for="essence">Essence</label>
+        </div>
+        <div class="carburant">
+            <input type="radio" id="diesel" name="radio" value="0.21" onclick="fuelP(this.value)">
+            <label for="diesel">Diesel</label>
+        </div>
+        <div class="carburant">
+            <input type="radio" id="electrique" name="radio" value="0.05" onclick="fuelP(this.value)">
+            <label for="electrique">Electrique</label>
+        </div>
+        <div class="carburant">
+            <input type="radio" id="hybride" name="radio" value="0.09" onclick="fuelP(this.value)">
+            <label for="hybride">Hybride</label>
+        </div>
+    </form>
+
+    <!-----------------------gear box----------------------->
+
+    <h2 class="choose">Select your gear box type</h2>
+    <form class="gear-box">
+        <div class="gear" id="manual1">
+            <input type="radio" id="manual" name="gear" value="manual">
+            <label for="manual">Manual</label>
+        </div>
+        <div class="gear" id="automatic1">
+            <input type="radio" id="automatic" name="gear" value="automatic">
+            <label for="automatic">Automatic</label>
+        </div>
+    </form>
+
+    <!-----------------------Reservation duration----------------------->
+
+    <h2 class="choose">Reservation duration</h2>
+    <div class="duration">
+        <label for="date">Duration :</label>
+        <input type="number" id="days" name="days">
+    </div>
+
+    <!------------ div for space between elements ------->
+    <div class="div-for-space"></div>
+    <!---------------- end of space between ---------->
+
+
+    <div class="submit-1">
+        <input type="submit" name="" value="Submit" onclick="calc()" class="submit">
+    </div>
+
+    <!------------ div for space between elements ------->
+    <div class="div-for-space"></div>
+    <!---------------- end of space between ---------->
+
+
+    <!------------ beginning of footer --------->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>RENT<span>CAR</span></h3>
+
+            <p class="footer-links">
+                <a href="#">Home</a> |
+                <a href="#">Gallery</a> |
+                <a href="#">Reservation</a> |
+                <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>309 - Rupa Solitaire,
+                     Bldg. No. A - 1, Sector - 1</span> Mahape, Navi Mumbai - 400710</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 22-27782183</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:hichamelkamouni.dev@gmail.com">hichamelkamouni.dev@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo explicabo facilis minima laboriosam necessitatibus.</p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!------------ end of the footer --------->
+
+
+
+
+    <script>
+        var type, basePrice, fuel, tranPrice = 0,
+            total;
+
+
+        function choix(e) {
+            type = e;
+            var a = document.getElementsByName('radio');
+            for (var i = 0; i < a.length; i++) {
+                a[i].disabled = true;
+            }
+
+
+            var b = document.getElementsByName('gear');
+            for (var i = 0; i < b.length; i++) {
+                b[i].disabled = true;
+            }
+
+
+            switch (type) {
+                case "moto":
+                    document.querySelector("#essence").disabled = false;
+                    document.querySelector("#electrique").disabled = false;
+                    basePrice = 10;
+                    break;
+
+
+                case "compact":
+                    document.querySelector("#manual").disabled = false;
+                    document.querySelector("#manual").checked = true;
+                    document.querySelector("#hybride").disabled = false;
+                    document.querySelector("#essence").disabled = false;
+                    document.querySelector("#diesel").disabled = false;
+                    basePrice = 14;
+                    break;
+
+
+                case "citadine":
+                    document.querySelector("#manual").disabled = false;
+                    document.querySelector("#manual").checked = true;
+                    document.querySelector("#electrique").disabled = false;
+                    document.querySelector("#hybride").disabled = false;
+                    document.querySelector("#essence").disabled = false;
+                    document.querySelector("#diesel").disabled = false;
+                    basePrice = 12;
+                    break;
+
+
+                case "utilitaire":
+                    document.querySelector("#manual").disabled = false;
+                    document.querySelector("#manual").checked = true;
+                    document.querySelector("#diesel").disabled = false;
+                    document.querySelector("#diesel").checked = true;
+                    basePrice = 16;
+                    break;
+
+                case "berlin":
+                    document.querySelector("#automatic").disabled = false;
+                    document.querySelector("#automatic").checked = true;
+                    document.querySelector("#hybride").disabled = false;
+                    document.querySelector("#essence").disabled = false;
+                    document.querySelector("#diesel").disabled = false;
+                    basePrice = 20;
+                    tranPrice = 0.19;
+                    break;
+
+                case "truck":
+                    document.querySelector("#automatic").disabled = false;
+                    document.querySelector("#automatic").checked = true;
+                    document.querySelector("#diesel").disabled = false;
+                    document.querySelector("#diesel").checked = true;
+                    basePrice = 250;
+                    tranPrice = 0.19;
+                    break;
+
+                case "cm":
+                    document.querySelector("#manual").disabled = false;
+                    document.querySelector("#manual").checked = true;
+                    document.querySelector("#diesel").disabled = false;
+                    document.querySelector("#essence").disabled = false;
+                    basePrice = 900;
+                    break;
+
+            }
+
+
+        }
+
+        /* fuel */
+        function fuelP(e) {
+            fuel = e;
+        }
+
+        /* calcul */
+        function calc() {
+            var days = document.querySelector("#days").value;
+
+            total = (basePrice + (basePrice * fuel) + (basePrice * tranPrice)) * days;
+
+            alert(total);
+        }
+    </script>
+</body>
+
+</html>
